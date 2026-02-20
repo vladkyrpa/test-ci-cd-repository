@@ -145,6 +145,8 @@ This action:
 - Creates Release PR with version bump and CHANGELOG.md
 - After the PR is approved, creates new GitHub release and tag.
 
+Note: Git hub actions should be allowed to create and edit pull requests (github repo settings/actions)
+
 ### PR Title Validation Action
 
 ```yaml
