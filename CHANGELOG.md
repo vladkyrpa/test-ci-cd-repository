@@ -1,5 +1,16 @@
 # Changelog
 
+## [2.0.0](https://github.com/vladkyrpa/test-ci-cd-repository/compare/test-ci-cd-repository-v1.3.0...test-ci-cd-repository-v2.0.0) (2026-02-20)
+
+
+### ⚠ BREAKING CHANGES
+
+* Refactor src
+
+### Features
+
+* Refactor src ([83749cf](https://github.com/vladkyrpa/test-ci-cd-repository/commit/83749cf2fdb61b706c2ec62f341d65af665e42fe))
+
 ## [1.3.0](https://github.com/vladkyrpa/test-ci-cd-repository/compare/test-ci-cd-repository-v1.2.1...test-ci-cd-repository-v1.3.0) (2026-02-20)
 
 
