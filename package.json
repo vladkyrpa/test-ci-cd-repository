@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "release": "semantic-release"
+    "release:bootstrap": "dotenv -e .env.release -- release-please bootstrap --token=$GITHUB_TOKEN --repo-url=$REPO --release-type=node",
+    "release:pr1": "dotenv -e .env.release -- sh -c 'release-please release-pr --token=$GITHUB_TOKEN --repo-url=$REPO'",
+    "release:pr": "dotenv -e .env.release -- release-please release-pr --token=$GITHUB_TOKEN --repo-url=$REPO",
+    "release:github": "dotenv -e .env.release -- sh -c 'release-please github-release --token=$GITHUB_TOKEN --repo-url=$REPO'"
   },
   "repository": {
     "type": "git",
@@ -26,6 +29,7 @@
     "@semantic-release/github": "^12.0.6",
     "@semantic-release/npm": "^13.1.4",
     "@semantic-release/release-notes-generator": "^14.1.0",
+    "release-please": "^15.13.0",
     "semantic-release": "^25.0.3"
   }
 }

@@ -2,7 +2,8 @@
 
 Install the CLI globally:
 
-- `npm install -g release-please`
+- `npm install --save-dev release-please@15`
+- `npm
 
 Check official documentation [here](https://github.com/googleapis/release-please/blob/main/docs/cli.md)
 
@@ -76,9 +77,9 @@ Add to `package.json`
 ```json
 {
   "scripts": {
-    "release:bootstrap": "dotenv -e .env.release -- release-please bootstrap --token=$GITHUB_TOKEN --repo-url=$REPO --release-type=node",
-    "release:pr": "dotenv -e .env.release -- release-please release-pr --token=$GITHUB_TOKEN --repo-url=$REPO",
-    "release:github": "dotenv -e .env.release -- release-please github-release --token=$GITHUB_TOKEN --repo-url=$REPO"
+    "release:bootstrap": "dotenv -e .env.release -- sh -c 'release-please bootstrap --token=$GITHUB_TOKEN --repo-url=$REPO --release-type=node'",
+    "release:pr": "dotenv -e .env.release -- sh -c 'release-please release-pr --token=$GITHUB_TOKEN --repo-url=$REPO'",
+    "release:github": "dotenv -e .env.release -- sh -c 'release-please github-release --token=$GITHUB_TOKEN --repo-url=$REPO'"
   }
 }
 ```
