@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.0.1](https://github.com/vladkyrpa/test-ci-cd-repository/compare/v2.0.0...v2.0.1) (2026-02-20)
+
+
+### Bug Fixes
+
+* change npm scripts for release-please ([4d49962](https://github.com/vladkyrpa/test-ci-cd-repository/commit/4d49962646dbf36f654db164d5850ae17f9bf22f))
+
 ## [2.0.0](https://github.com/vladkyrpa/test-ci-cd-repository/compare/test-ci-cd-repository-v1.3.0...test-ci-cd-repository-v2.0.0) (2026-02-20)
 
 
